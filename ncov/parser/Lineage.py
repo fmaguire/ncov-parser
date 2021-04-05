@@ -19,7 +19,7 @@ class Lineage():
         """
         sample_name = row['taxon']
         sample_name = re.sub('^Consensus_', '', sample_name) # added by ivar
-        sample_name = re.sub('.primertrimmed.consensus_threshold_0.75_quality_20', '', sample_name) # added by ivar
+        sample_name = re.sub('.consensus_threshold_0.75_quality_20', '', sample_name) # added by ivar
         sample_name = re.sub('_MN908947.3', '', sample_name) # added by pangolin
         sample_name = re.sub('/ARTIC/nanopolish', '', sample_name) # added by ARTIC
         sample_name = re.sub('/ARTIC/medaka', '', sample_name) # added by ARTIC
