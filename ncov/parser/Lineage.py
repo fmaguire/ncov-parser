@@ -57,5 +57,6 @@ class Lineage():
                 notes = self.get_notes(row=row)
                 lineage_dict[sample] = { "lineage":lineage, "notes":notes }
         self.lineage_dict = lineage_dict
+        print(lineage_dict)
         return lineage_dict
 
